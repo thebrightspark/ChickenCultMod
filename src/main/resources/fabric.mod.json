@@ -22,6 +22,7 @@
   "mixins": [
     "chickencultmod.mixins.json"
   ],
+  "accessWidener": "chickencultmod.accesswidener",
   "depends": {
     "fabricloader": ">=0.14.19",
     "fabric-api": "*",
