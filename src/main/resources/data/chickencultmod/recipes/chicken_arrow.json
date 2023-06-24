@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:chicken"
+		},
+		{
+			"item": "minecraft:feather"
+		},
+		{
+			"item": "minecraft:arrow"
+		}
+	],
+	"result": {
+		"item": "chickencultmod:chicken_arrow",
+		"count": 1
+	}
+}
