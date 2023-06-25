@@ -30,9 +30,7 @@ public class ChickenArmor extends ArmorItem implements IAnimatable {
 	}
 
 	private <T extends IAnimatable> PlayState animationPredicate(AnimationEvent<T> event) {
-		event.getController().setAnimation(
-			new AnimationBuilder().addAnimation("animation.chicken_armor.new", EDefaultLoopTypes.LOOP)
-		);
+		event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.LOOP));
 		return PlayState.CONTINUE;
 	}
 

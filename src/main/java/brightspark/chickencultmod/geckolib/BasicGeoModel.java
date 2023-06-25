@@ -8,14 +8,22 @@ import software.bernie.geckolib3.model.AnimatedGeoModel;
 public class BasicGeoModel<T extends IAnimatable> extends AnimatedGeoModel<T> {
 	private final Identifier model, texture, animation;
 
+	private BasicGeoModel(String type, String modelName, String textureName, String animationName) {
+		model = new Identifier(ChickenCultMod.MOD_ID, "geo/" + type + "/" + modelName + ".geo.json");
+		texture = new Identifier(ChickenCultMod.MOD_ID, "textures/" + type + "/" + textureName + ".png");
+		animation = new Identifier(ChickenCultMod.MOD_ID, "animations/" + animationName + ".animation.json");
+	}
+
 	private BasicGeoModel(String type, String name) {
-		model = new Identifier(ChickenCultMod.MOD_ID, "geo/" + name + ".geo.json");
-		texture = new Identifier(ChickenCultMod.MOD_ID, "textures/" + type + "/" + name + ".png");
-		animation = new Identifier(ChickenCultMod.MOD_ID, "animations/" + name + ".animation.json");
+		this(type, name, name, name);
 	}
 
 	public static <T extends IAnimatable> AnimatedGeoModel<T> item(String name) {
 		return new BasicGeoModel<>("item", name);
+	}
+
+	public static <T extends IAnimatable> AnimatedGeoModel<T> armor(String name) {
+		return new BasicGeoModel<>("item", name, name, "armor");
 	}
 
 	public static <T extends IAnimatable> AnimatedGeoModel<T> block(String name) {

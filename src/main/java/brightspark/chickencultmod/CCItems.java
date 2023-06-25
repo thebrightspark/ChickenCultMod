@@ -15,14 +15,18 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 public class CCItems {
-	public static Item CHICKEN_HELMET, CHICKEN_CHESTPLATE, CHICKEN_LEGGINGS, CHICKEN_BOOTS,
+	public static Item
+		WARRIOR_CHICKEN_HELMET, WARRIOR_CHICKEN_CHESTPLATE, WARRIOR_CHICKEN_LEGGINGS, WARRIOR_CHICKEN_BOOTS,
 		CHICKEN_ARROW;
 
 	public static void init() {
-		CHICKEN_HELMET = item("chicken_helmet", new ChickenArmor(EquipmentSlot.HEAD, settings()));
-		CHICKEN_CHESTPLATE = item("chicken_chestplate", new ChickenArmor(EquipmentSlot.CHEST, settings()));
-		CHICKEN_LEGGINGS = item("chicken_leggings", new ChickenArmor(EquipmentSlot.LEGS, settings()));
-		CHICKEN_BOOTS = item("chicken_boots", new ChickenArmor(EquipmentSlot.FEET, settings()));
+		WARRIOR_CHICKEN_HELMET = item("warrior_chicken_helmet", new ChickenArmor(EquipmentSlot.HEAD, settings()));
+		WARRIOR_CHICKEN_CHESTPLATE = item(
+			"warrior_chicken_chestplate",
+			new ChickenArmor(EquipmentSlot.CHEST, settings())
+		);
+		WARRIOR_CHICKEN_LEGGINGS = item("warrior_chicken_leggings", new ChickenArmor(EquipmentSlot.LEGS, settings()));
+		WARRIOR_CHICKEN_BOOTS = item("warrior_chicken_boots", new ChickenArmor(EquipmentSlot.FEET, settings()));
 
 		CHICKEN_ARROW = item("chicken_arrow", new ChickenArrowItem(settings()));
 		dispenserProjectile(CHICKEN_ARROW, CCEntities.CHICKEN_ARROW);
