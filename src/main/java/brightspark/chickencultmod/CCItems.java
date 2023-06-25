@@ -21,10 +21,8 @@ public class CCItems {
 
 	public static void init() {
 		WARRIOR_CHICKEN_HELMET = item("warrior_chicken_helmet", new ChickenArmor(EquipmentSlot.HEAD, settings()));
-		WARRIOR_CHICKEN_CHESTPLATE = item(
-			"warrior_chicken_chestplate",
-			new ChickenArmor(EquipmentSlot.CHEST, settings())
-		);
+		WARRIOR_CHICKEN_CHESTPLATE =
+			item("warrior_chicken_chestplate", new ChickenArmor(EquipmentSlot.CHEST, settings()));
 		WARRIOR_CHICKEN_LEGGINGS = item("warrior_chicken_leggings", new ChickenArmor(EquipmentSlot.LEGS, settings()));
 		WARRIOR_CHICKEN_BOOTS = item("warrior_chicken_boots", new ChickenArmor(EquipmentSlot.FEET, settings()));
 

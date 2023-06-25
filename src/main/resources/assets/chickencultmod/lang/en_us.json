@@ -1,7 +1,8 @@
 {
 	"itemGroup.chickencultmod.name": "Chicken Cult Mod",
-	"item.chickencultmod.chicken_helmet": "Chicken Helmet",
-	"item.chickencultmod.chicken_chestplate": "Chicken Chestplate",
-	"item.chickencultmod.chicken_leggings": "Chicken Leggings",
-	"item.chickencultmod.chicken_boots": "Chicken Boots"
+	"item.chickencultmod.warrior_chicken_helmet": "Warrior Chicken Helmet",
+	"item.chickencultmod.warrior_chicken_chestplate": "Warrior Chicken Chestplate",
+	"item.chickencultmod.warrior_chicken_leggings": "Warrior Chicken Leggings",
+	"item.chickencultmod.warrior_chicken_boots": "Warrior Chicken Boots",
+	"item.chickencultmod.chicken_arrow": "Chicken Arrow"
 }
