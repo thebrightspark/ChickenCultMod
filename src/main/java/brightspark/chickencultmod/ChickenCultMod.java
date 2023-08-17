@@ -19,6 +19,7 @@ public class ChickenCultMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		CCEntities.init();
+		CCBlocks.init();
 		CCItems.init();
 	}
 }
